@@ -271,3 +271,117 @@ img {
 .t-str     { color: var(--color-beige); }
 .t-bool    { color: #82b4d4; }
 .t-num    { color: #d67e7e; }
+
+/* UTILITIES */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-beige);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--color-beige);
+  margin-bottom: 48px;
+  border-radius: 2px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 48px;
+  line-height: 1.15;
+}
+
+/* ABOUT */
+
+#about {
+  padding: var(--section-padding);
+  background: var(--color-forest);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-text p strong {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.stat-box {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-beige);
+  line-height: 1;
+}
+
+.stat-lbl {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.skills-group {
+  margin-bottom: 28px;
+}
+
+.skills-group-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-beige-dim);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-beige);
+  background: rgba(193, 173, 154, 0.08);
+  border: 1px solid rgba(193, 173, 154, 0.2);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.04em;
+  transition: background 0.2s
+}
