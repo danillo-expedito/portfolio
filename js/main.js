@@ -24,3 +24,19 @@ navLogo.addEventListener('click', (e) => {
   navMobile.classList.remove('is-open');
 });
 
+// Scroll reveal
+const revealElements = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 60);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealElements.forEach(el => observer.observe(el));
+
