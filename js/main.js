@@ -1,3 +1,11 @@
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('load', () => {
+  setTimeout(() => window.scrollTo(0, 0), 0);
+});
+
 const hamburger = document.getElementById('hamburger');
 const navMobile = document.getElementById('nav-mobile');
 const mobileLinks = document.querySelectorAll('.nav-mobile-links a');
