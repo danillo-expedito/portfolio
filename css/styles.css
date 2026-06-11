@@ -162,6 +162,11 @@ img {
   font-size: clamp(16px, 2vw, 20px);
   color: var(--color-muted);
   margin-bottom: 40px;
+  max-width: 588px;
+}
+
+.hero-tagline--dim {
+  font-size: 14px;
 }
 
 .hero-cursor {
@@ -735,4 +740,47 @@ img {
 .footer-copy {
   font-size: 12px;
   color: var(--color-beige-dim);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-links {
+    display: none;
+  }
+
+  #navbar {
+    padding: 0 5%;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    padding: 120px 5% 60px;
+    gap: 40px;
+  }
+
+  .hero-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Section padding */
+  #about, #projects, #experience, #education, #stack, #contact {
+    padding: 70px 5%;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
