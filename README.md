@@ -6,7 +6,7 @@ Portfolio pessoal desenvolvido com HTML, CSS e JavaScript vanilla.
 
 ## 🔗 Acesse
 
-[danilloexpedito.dev](https://danilloexpedito.dev){target="_blank"}
+[danilloexpedito.dev (Ctrl+Click to open in a new tab)](https://danilloexpedito.dev)
 
 ## 🛠️ Tecnologias
 
